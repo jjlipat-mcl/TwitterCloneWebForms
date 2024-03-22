@@ -1,0 +1,97 @@
+﻿* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.create-post-container {
+    display: flex;
+    flex-direction: column;
+}
+
+    .create-post-container textarea {
+        margin-bottom: 8px;
+        border-radius: 16px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .create-post-container input[type="submit"] {
+        align-self: flex-end;
+        width: 150px;
+        padding: 10px;
+        border-radius: 16px;
+        background-color: deepskyblue;
+        border: 0px;
+        font-size: 16px;
+        color: white;
+    }
+
+.post-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-areas:
+        "profile-picture posted-by posted-on"
+        "profile-picture post-content post-content"
+        "post-actions post-actions post-actions"
+}
+
+    .post-container .profile-picture {
+        width: 70px;
+        height: 70px;
+        background-color: gray;
+        border-radius: 100%;
+        grid-area: profile-picture;
+        margin-right: 14px;
+    }
+
+.posted-by {
+    font-weight: bold;
+    font-size: 20px;
+    grid-area: posted-by;
+    margin: 0;
+    align-self: end;
+    text-decoration: none;
+    color: black;
+}
+
+.posted-on {
+    grid-area: posted-on;
+    align-self: end;
+    margin: 0;
+    color: gray;
+    margin-left: 12px;
+}
+
+.post-content {
+    grid-area: post-content;
+}
+
+.post-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: post-actions;
+}
+
+    .post-actions img {
+        width: 22px;
+        height: 22px;
+    }
+
+.profile-info .profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 100%;
+}

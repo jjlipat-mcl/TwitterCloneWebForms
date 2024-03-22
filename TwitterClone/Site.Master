@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TwitterClone.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="/Assets/global.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="HeaderPlaceholder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <a href="/">Back to Home</a>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
